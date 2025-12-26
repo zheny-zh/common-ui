@@ -1,1 +1,1 @@
-export * from "./components/skeleton";
+export { Skeleton } from "./components/skeleton/skeleton";

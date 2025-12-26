@@ -1,7 +1,7 @@
 {
   "name": "@zheny-zh/common-ui",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/common-ui.umd.js",
   "module": "./dist/common-ui.es.js",
   "types": "./dist/common-ui.es.d.ts",

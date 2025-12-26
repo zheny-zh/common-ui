@@ -21,10 +21,7 @@ export default defineConfig({
       formats: ["es", "cjs", "umd"],
     },
     rollupOptions: {
-      external: ["react"],
-      output: {
-        globals: { react: "React" },
-      },
+      external: ["react", "react-dom"],
     },
   },
 });

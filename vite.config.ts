@@ -10,7 +10,7 @@ export default defineConfig({
       outDir: "dist",
       entryRoot: "src",
       insertTypesEntry: true,
-      include: ["src/index.ts", "src/**/*.ts", "src/**/*.tsx"],
+      include: ["src/**/*.ts", "src/**/*.tsx"],
     }),
   ],
 

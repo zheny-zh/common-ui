@@ -1,1 +1,1 @@
-export * from "./components/skeleton";
+export * from "./components/skeleton/skeleton";

@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import type { ComponentProps, CSSProperties } from "react";
 
-import "./skeleton.css";
+import s from "./skeleton.module.css";
 
 export type SkeletonProps = {
   circle?: boolean;
@@ -21,7 +21,7 @@ export const Skeleton = ({
 }: SkeletonProps) => {
   return (
     <div
-      className={clsx("skeleton", circle && "circle", className)}
+      className={clsx(s.skeleton, circle && s.circle, className)}
       style={{ width, height, ...style }}
       {...props}
     />

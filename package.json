@@ -1,19 +1,23 @@
 {
-  "name": "common-ui",
+  "name": "@zheny-zh/common-ui",
   "private": false,
   "version": "1.0.0",
-  "type": "module",
+  "main": "./dist/common-ui.umd.js",
+  "module": "./dist/common-ui.es.js",
+  "types": "./dist/common-ui.es.d.ts",
   "files": [
     "dist"
   ],
-  "main": "./dist/common-ui.umd.js",
-  "module": "./dist/common-ui.es.js",
   "exports": {
-    "./package.json": "./package.json",
     ".": {
-      "types": "./dist/common-ui.es.d.js",
-      "import": "./dist/common-ui.es.js"
-    }
+      "import": "./dist/common-ui.es.js",
+      "require": "./dist/common-ui.umd.js",
+      "types": "./dist/common-ui.es.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "tsc -b && vite build",

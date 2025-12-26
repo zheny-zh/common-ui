@@ -18,7 +18,7 @@
     inset: 0;
     transform: translateX(-100%);
 
-    background: linear-gradient(90deg, transparent, rgba(243, 232, 232, 0.62), transparent);
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 10%), transparent);
 
     animation: shimmer 1.5s infinite;
 }
@@ -29,6 +29,7 @@
     border-radius: 50%;
 }
 
+/* Animation */
 @keyframes shimmer {
     100% {
         transform: translateX(100%);

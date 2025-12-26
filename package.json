@@ -1,8 +1,20 @@
 {
   "name": "common-ui",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/common-ui.umd.js",
+  "module": "./dist/common-ui.es.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/common-ui.es.d.js",
+      "import": "./dist/common-ui.es.js"
+    }
+  },
   "scripts": {
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -12,6 +24,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "prettier": "^3.7.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -39,6 +52,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.16"
   }
 }

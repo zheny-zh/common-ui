@@ -34,7 +34,6 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          "react-bootstrap": "ReactBootstrap",
           "@fortawesome/react-fontawesome": "FontAwesomeReact",
           "@fortawesome/free-solid-svg-icons": "FontAwesomeFreeSolidIcon",
           motion: "motion",

@@ -16,7 +16,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "up:version:patch": "npm version patch && npm run build && npm publish",
+    "up:version:minor": "npm version minor && npm run build && npm publish",
+    "up:version:major": "npm version major && npm run build && npm publish"
   },
   "dependencies": {
     "clsx": "^2.1.1",

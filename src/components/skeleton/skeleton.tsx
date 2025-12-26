@@ -1,15 +1,15 @@
-import { clsx } from 'clsx'
-import type { ComponentProps, CSSProperties } from 'react'
+import { clsx } from "clsx";
+import type { ComponentProps, CSSProperties } from "react";
 
-import s from './Skeleton.module.css'
+import s from "./skeleton.module.css";
 
 export type SkeletonProps = {
-  circle?: boolean
-  width?: number | string
-  height?: number | string
-  className?: string
-  style?: CSSProperties
-} & ComponentProps<'div'>
+  circle?: boolean;
+  width?: number | string;
+  height?: number | string;
+  className?: string;
+  style?: CSSProperties;
+} & ComponentProps<"div">;
 
 export const Skeleton = ({
   circle = false,
@@ -25,5 +25,5 @@ export const Skeleton = ({
       style={{ width, height, ...style }}
       {...props}
     />
-  )
-}
+  );
+};
